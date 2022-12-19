@@ -33,13 +33,24 @@ function App() {
     <div className="App">
       <h1>Links Uteis</h1>
       <div className="links-uteis">
-        {tags.map((item, index) => {
+        {Array.from(tags)
+          .sort((a, b) => {
+            return a.localeCompare(b, "en", { sensitivity: "base" });
+          })
+          .map((item, index) => {
+            return (
+              <button key={index} onClick={() => filterTags(item)}>
+                {item}
+              </button>
+            );
+          })}
+        {/* {tags.map((item, index) => {
           return (
             <button key={index} onClick={() => filterTags(item)}>
               {item}
             </button>
           );
-        })}
+        })} */}
       </div>
       <hr></hr>
       <button onClick={() => clearFilter()}>clear filter</button>
