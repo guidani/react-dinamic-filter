@@ -1,0 +1,22 @@
+[
+    {
+        "name": "cssgradient",
+        "link": "https://cssgradient.io",
+        "roles": ["css", "frontend"]
+    },
+    {
+        "name": "w3schools",
+        "link": "https://www.w3schools.com",
+        "roles": ["course", "frontend", "backend","php", "html", "css"]
+    },
+    {
+        "name": "The Odin Project",
+        "link": "https://www.theodinproject.com",
+        "roles": ["course", "react"]
+    },
+    {
+        "name": "Full Stack Open",
+        "link": "https://fullstackopen.com/en/",
+        "roles": ["course", "react"]
+    }
+]
